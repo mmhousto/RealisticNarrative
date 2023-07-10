@@ -60,6 +60,9 @@ MonoBehaviour:
   cloudControl:
     m_OverrideState: 1
     m_Value: 0
+  cloudSimpleMode:
+    m_OverrideState: 0
+    m_Value: 0
   m_CloudPreset:
     m_OverrideState: 1
     m_Value: 1
@@ -226,6 +229,15 @@ MonoBehaviour:
   erosionNoiseType:
     m_OverrideState: 1
     m_Value: 1
+  microErosion:
+    m_OverrideState: 0
+    m_Value: 0
+  microErosionFactor:
+    m_OverrideState: 1
+    m_Value: 0.5
+  microErosionScale:
+    m_OverrideState: 1
+    m_Value: 200
   ambientLightProbeDimmer:
     m_OverrideState: 0
     m_Value: 1
