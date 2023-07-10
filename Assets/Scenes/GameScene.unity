@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 6688.378, g: 4169.778, b: 2779.7659, a: 1}
+  m_IndirectSpecularColor: {r: 6188.374, g: 3815.815, b: 2581.305, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,7 +134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8074829894013381203, guid: d2e913c2e1bae2d43a908e7890ace9ea, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8074829894013381203, guid: d2e913c2e1bae2d43a908e7890ace9ea, type: 3}
       propertyPath: m_LocalScale.x
@@ -197,6 +197,130 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2e913c2e1bae2d43a908e7890ace9ea, type: 3}
+--- !u!1 &107732355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 107732357}
+  - component: {fileID: 107732356}
+  m_Layer: 0
+  m_Name: Water Wave Deformer (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &107732356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107732355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cf48dc57241ca4180a616b92b5d9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  amplitude: 15
+  regionSize: {x: 171.35124, y: 212.75705}
+  scaleMode: 1
+  boxBlend: {x: 0, y: 0}
+  cubicBlend: 1
+  waveLength: 50
+  waveRepetition: 1
+  waveSpeed: 50
+  waveOffset: 0
+  waveBlend: {x: 0.57556146, y: 0.62314427}
+  breakingRange: {x: 0, y: 0.6726303}
+  deepFoamRange: {x: 0, y: 1}
+  bowWaveElevation: 1
+  range: {x: 0, y: 1}
+  texture: {fileID: 0}
+  deepFoamDimmer: 1
+  surfaceFoamDimmer: 1
+--- !u!4 &107732357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107732355}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -67.3, y: 40.4, z: 510.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &178112649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 178112651}
+  - component: {fileID: 178112650}
+  m_Layer: 0
+  m_Name: Water Wave Deformer (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &178112650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178112649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cf48dc57241ca4180a616b92b5d9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  amplitude: 50
+  regionSize: {x: 613.3094, y: 505.37366}
+  scaleMode: 1
+  boxBlend: {x: 0, y: 0}
+  cubicBlend: 1
+  waveLength: 150
+  waveRepetition: 1
+  waveSpeed: 100
+  waveOffset: 0
+  waveBlend: {x: 0.44918153, y: 0.5538638}
+  breakingRange: {x: 0.78302246, y: 0.90673774}
+  deepFoamRange: {x: 0.7765511, y: 0.81347543}
+  bowWaveElevation: 1
+  range: {x: 0, y: 1}
+  texture: {fileID: 0}
+  deepFoamDimmer: 1
+  surfaceFoamDimmer: 1
+--- !u!4 &178112651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178112649}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 207.8, y: 41.399994, z: -205.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &226037110
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,14 +345,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226037110}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 101.6, y: -1.5499992, z: 295.22644}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 112.40501, y: 40.4, z: 298.7818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1069880746}
-  m_Father: {fileID: 271315961}
-  m_RootOrder: -1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &226037112
 MonoBehaviour:
@@ -243,18 +366,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
-  amplitude: 5
-  regionSize: {x: 211.84258, y: 71.44748}
+  amplitude: 15
+  regionSize: {x: 171.35124, y: 212.75705}
   scaleMode: 1
   boxBlend: {x: 0, y: 0}
   cubicBlend: 1
-  waveLength: 1
+  waveLength: 50
   waveRepetition: 1
-  waveSpeed: 12
+  waveSpeed: 50
   waveOffset: 0
-  waveBlend: {x: 0.45, y: 0.5}
-  breakingRange: {x: 0.4, y: 0.8}
-  deepFoamRange: {x: 0.3, y: 0.7}
+  waveBlend: {x: 0.57556146, y: 0.62314427}
+  breakingRange: {x: 0, y: 0.6726303}
+  deepFoamRange: {x: 0, y: 1}
   bowWaveElevation: 1
   range: {x: 0, y: 1}
   texture: {fileID: 0}
@@ -355,8 +478,8 @@ MonoBehaviour:
   ripplesCurrentMapInfluence: 1
   deformation: 1
   deformationRes: 512
-  deformationAreaSize: {x: 200, y: 200}
-  deformationAreaOffset: {x: 0, y: 0}
+  deformationAreaSize: {x: 2500, y: 2000}
+  deformationAreaOffset: {x: 500, y: 427.4}
   foam: 1
   foamResolution: 512
   foamAreaSize: {x: 200, y: 200}
@@ -428,8 +551,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 226037111}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -881,7 +1003,96 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &393431170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6131813016107761470, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+  m_PrefabInstance: {fileID: 1309266987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &393431174
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393431170}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8536425139288874787, guid: 4c6b5458a19683e40918bc845fd398ca, type: 3}
+--- !u!1 &411842430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411842432}
+  - component: {fileID: 411842431}
+  m_Layer: 0
+  m_Name: Water Wave Deformer (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &411842431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411842430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cf48dc57241ca4180a616b92b5d9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  amplitude: 50
+  regionSize: {x: 613.3094, y: 505.37366}
+  scaleMode: 1
+  boxBlend: {x: 0, y: 0}
+  cubicBlend: 1
+  waveLength: 150
+  waveRepetition: 1
+  waveSpeed: 100
+  waveOffset: 0
+  waveBlend: {x: 0.44918153, y: 0.5538638}
+  breakingRange: {x: 0.78302246, y: 0.90673774}
+  deepFoamRange: {x: 0.7765511, y: 0.81347543}
+  bowWaveElevation: 1
+  range: {x: 0, y: 1}
+  texture: {fileID: 0}
+  deepFoamDimmer: 1
+  surfaceFoamDimmer: 1
+--- !u!4 &411842432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411842430}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 835, y: 41.399994, z: -223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &448815875
 PrefabInstance:
@@ -893,7 +1104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1735826168187230173, guid: 67026f81b9eb0ed49a356709e99d9aef, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1735826168187230173, guid: 67026f81b9eb0ed49a356709e99d9aef, type: 3}
       propertyPath: m_LocalScale.x
@@ -1051,7 +1262,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &513672422
 GameObject:
@@ -1071,7 +1282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &513672423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,7 +1487,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 7.5, y: -180, z: 0}
 --- !u!1 &548758129
 GameObject:
@@ -1369,7 +1580,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &601122113
 PrefabInstance:
@@ -1385,7 +1596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177671, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_RootOrder
@@ -1393,15 +1604,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 270.39362
+      value: 93.46622
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 51.915
+      value: 52.765
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 200.15
+      value: 449.10272
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1442,6 +1653,10 @@ PrefabInstance:
     - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_Lens.FarClipPlane
       value: 50000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925442191277752, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: CameraDistance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1673,13 +1888,75 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa2719c8580f7e344b63f76dee4bd657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationDir: {x: 1, y: 0, z: 0}
   speed: 5
+--- !u!1 &736036267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736036269}
+  - component: {fileID: 736036268}
+  m_Layer: 0
+  m_Name: Water Wave Deformer (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &736036268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736036267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cf48dc57241ca4180a616b92b5d9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  amplitude: 50
+  regionSize: {x: 613.3094, y: 505.37366}
+  scaleMode: 1
+  boxBlend: {x: 0, y: 0}
+  cubicBlend: 1
+  waveLength: 150
+  waveRepetition: 1
+  waveSpeed: 100
+  waveOffset: 0
+  waveBlend: {x: 0.44918153, y: 0.5538638}
+  breakingRange: {x: 0.78302246, y: 0.90673774}
+  deepFoamRange: {x: 0.7765511, y: 0.81347543}
+  bowWaveElevation: 1
+  range: {x: 0, y: 1}
+  texture: {fileID: 0}
+  deepFoamDimmer: 1
+  surfaceFoamDimmer: 1
+--- !u!4 &736036269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736036267}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -545, y: 41.399994, z: 723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &738386960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1773,6 +2050,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &880287130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 880287132}
+  - component: {fileID: 880287131}
+  m_Layer: 0
+  m_Name: Water Wave Deformer (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &880287131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880287130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cf48dc57241ca4180a616b92b5d9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  amplitude: 50
+  regionSize: {x: 613.3094, y: 505.37366}
+  scaleMode: 1
+  boxBlend: {x: 0, y: 0}
+  cubicBlend: 1
+  waveLength: 150
+  waveRepetition: 1
+  waveSpeed: 100
+  waveOffset: 0
+  waveBlend: {x: 0.44918153, y: 0.5538638}
+  breakingRange: {x: 0.78302246, y: 0.90673774}
+  deepFoamRange: {x: 0.7765511, y: 0.81347543}
+  bowWaveElevation: 1
+  range: {x: 0, y: 1}
+  texture: {fileID: 0}
+  deepFoamDimmer: 1
+  surfaceFoamDimmer: 1
+--- !u!4 &880287132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880287130}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60, y: 41.399994, z: 1162}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &887879053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1807,19 +2146,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 270.39362
+      value: 93.46622
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 51.915
+      value: 52.765
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 200.15
+      value: 449.10272
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.5501164
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1827,7 +2166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.83508795
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2081,9 +2420,113 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1069880745
+--- !u!1001 &1309266987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4005500259658817378, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_Name
+      value: Boat
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286073257604255236, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286073257604255236, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: scaleMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286073257604255236, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: regionSize.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286073257604255236, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: deepFoamDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286073257604255236, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: surfaceFoamDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 64.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 46.652378
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 443.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9061898
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.42287123
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -50.032
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385861650331370968, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442597177943748169, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      propertyPath: targetSurface
+      value: 
+      objectReference: {fileID: 271315960}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6131813016107761470, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 393431174}
+  m_SourcePrefab: {fileID: 100100000, guid: 82b989f52c7d1c544a7345f783d9638c, type: 3}
+--- !u!1 &1535171730
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2091,124 +2534,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1069880746}
-  - component: {fileID: 1069880747}
+  - component: {fileID: 1535171732}
+  - component: {fileID: 1535171731}
   m_Layer: 0
-  m_Name: DecalTriggerDummy
+  m_Name: Water Wave Deformer (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1069880746
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069880745}
-  m_LocalRotation: {x: -0, y: -0.018969864, z: -0, w: 0.9998201}
-  m_LocalPosition: {x: 37.15, y: 0.5, z: 0.02}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1564788806}
-  m_Father: {fileID: 226037111}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0.826, z: 0}
---- !u!114 &1069880747
+--- !u!114 &1535171731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069880745}
+  m_GameObject: {fileID: 1535171730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fae10fbe1d1ad264b9f1913ea9218971, type: 3}
+  m_Script: {fileID: 11500000, guid: 78cf48dc57241ca4180a616b92b5d9f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterSurface: {fileID: 271315960}
-  decalGameObject: {fileID: 1564788807}
---- !u!1001 &1564788805
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1069880746}
-    m_Modifications:
-    - target: {fileID: 1060662616134595829, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_Name
-      value: ShoreFoam
-      objectReference: {fileID: 0}
-    - target: {fileID: 1060662616134595829, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8793870125573720769, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
---- !u!4 &1564788806 stripped
+  type: 3
+  amplitude: 50
+  regionSize: {x: 613.3094, y: 505.37366}
+  scaleMode: 1
+  boxBlend: {x: 0, y: 0}
+  cubicBlend: 1
+  waveLength: 150
+  waveRepetition: 1
+  waveSpeed: 100
+  waveOffset: 0
+  waveBlend: {x: 0.44918153, y: 0.5538638}
+  breakingRange: {x: 0.78302246, y: 0.90673774}
+  deepFoamRange: {x: 0.7765511, y: 0.81347543}
+  bowWaveElevation: 1
+  range: {x: 0, y: 1}
+  texture: {fileID: 0}
+  deepFoamDimmer: 1
+  surfaceFoamDimmer: 1
+--- !u!4 &1535171732
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4577943856785562495, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-  m_PrefabInstance: {fileID: 1564788805}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1564788807 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1060662616134595829, guid: dd50aaae29f4bbd48bfecee2a6a755a5, type: 3}
-  m_PrefabInstance: {fileID: 1564788805}
-  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535171730}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -382.3088, y: 41.399994, z: 159.00229}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581236194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,7 +2679,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1584961794
 GameObject:
@@ -2393,7 +2772,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1620312327
 GameObject:
@@ -2486,7 +2865,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1667269478
 PrefabInstance:
@@ -2501,20 +2880,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 270.1936
+      value: 89.87
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50.54
+      value: 51.39
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 204.15
+      value: 447.34
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.5501164
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2522,7 +2913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.83508795
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2534,11 +2925,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -113.25
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_Name
@@ -2546,7 +2941,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: MoveSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: SprintSpeed
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: GroundLayers.m_Bits
@@ -2635,6 +3038,68 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3605b1df6ae746b4b80822ded9e380b2, type: 3}
+--- !u!1 &1807689609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807689611}
+  - component: {fileID: 1807689610}
+  m_Layer: 0
+  m_Name: Water Wave Deformer (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1807689610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807689609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cf48dc57241ca4180a616b92b5d9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  amplitude: 50
+  regionSize: {x: 613.3094, y: 505.37366}
+  scaleMode: 1
+  boxBlend: {x: 0, y: 0}
+  cubicBlend: 1
+  waveLength: 150
+  waveRepetition: 1
+  waveSpeed: 100
+  waveOffset: 0
+  waveBlend: {x: 0.44918153, y: 0.5538638}
+  breakingRange: {x: 0.78302246, y: 0.90673774}
+  deepFoamRange: {x: 0.7765511, y: 0.81347543}
+  bowWaveElevation: 1
+  range: {x: 0, y: 1}
+  texture: {fileID: 0}
+  deepFoamDimmer: 1
+  surfaceFoamDimmer: 1
+--- !u!4 &1807689611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807689609}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 623, y: 41.399994, z: 1129}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1977695811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,7 +3191,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044730282
 GameObject:
@@ -2786,7 +3251,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1735826168187230173, guid: 67026f81b9eb0ed49a356709e99d9aef, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1735826168187230173, guid: 67026f81b9eb0ed49a356709e99d9aef, type: 3}
       propertyPath: m_LocalScale.x
@@ -2944,5 +3409,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
