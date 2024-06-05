@@ -16,12 +16,6 @@ MonoBehaviour:
   enable:
     m_OverrideState: 1
     m_Value: 1
-  localClouds:
-    m_OverrideState: 1
-    m_Value: 1
-  earthCurvature:
-    m_OverrideState: 0
-    m_Value: 0
   cloudTiling:
     m_OverrideState: 0
     m_Value: {x: 1, y: 1}
@@ -294,9 +288,6 @@ MonoBehaviour:
   shadowResolution:
     m_OverrideState: 0
     m_Value: 256
-  shadowPlaneHeightOffset:
-    m_OverrideState: 0
-    m_Value: 0
   shadowDistance:
     m_OverrideState: 0
     m_Value: 8000
@@ -306,7 +297,10 @@ MonoBehaviour:
   shadowOpacityFallback:
     m_OverrideState: 0
     m_Value: 0
-  m_Version: 2
+  m_Version: 3
+  localClouds:
+    m_OverrideState: 1
+    m_Value: 1
   m_ObsoleteWindSpeed:
     m_OverrideState: 0
     m_Value: 1
@@ -340,6 +334,7 @@ MonoBehaviour:
   - {fileID: 1880163708194025631}
   - {fileID: 2340290907100754200}
   - {fileID: -1298540920501238480}
+  - {fileID: 0}
 --- !u!114 &1880163708194025631
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -434,6 +429,7 @@ MonoBehaviour:
   m_Name: HDShadowSettings
   m_EditorClassIdentifier: 
   active: 1
+  interCascadeBorders: 1
   maxShadowDistance:
     m_OverrideState: 1
     m_Value: 25
