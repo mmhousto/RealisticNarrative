@@ -4,6 +4,7 @@ using UnityEngine;
 public class FallingDamage : MonoBehaviour
 {
     public float fallDistanceThreshold = 10f; // Distance threshold to disable the Animator
+    public GameObject playerFollowCam, playerDeathCam;
     private Animator animator;
     private CharacterController cc;
     private ThirdPersonController tpc;
@@ -37,6 +38,8 @@ public class FallingDamage : MonoBehaviour
             distanceExceeded = true;
             // Disable the Animator component
             animatorDisabled = true;
+            playerFollowCam.SetActive(false);
+            playerDeathCam.SetActive(true);
         }
 
         if (animator.GetBool("Grounded"))
